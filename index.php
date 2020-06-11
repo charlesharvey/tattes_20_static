@@ -1,13 +1,23 @@
 <?php include('includes/header.php'); ?>
 
-<section class="title_section invisible">
+<section class="title_section  ">
 
   <div class="title_container">
-    <div class="sliding_element">
-      <h1>Tattes</h1>
+    <div class="title_svg_container">
+      <?php include('images/logo-tattes.svg'); ?>
     </div>
   </div>
-  <img src="images/photo1.png" alt="">
+  <img src="images/tattes-header-photo.jpg" alt="">
+  <svg class="white_triangles" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" preserveAspectRatio="none" viewBox="0 0 1441 175" style="enable-background:new 0 0 1441 175;" xml:space="preserve">
+    <polygon class="st0" points="0,175 1440,175 1440,0 0,124 " />
+    <polygon class="st1" points="0,175 1440,175 1440,0 0,93 " />
+    <polygon class="st1" points="0,175 1440,175 1440,0 0,107 " />
+  </svg>
+  <svg class="white_triangles white_triangles_top" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" preserveAspectRatio="none" viewBox="0 0 1441 175" style="enable-background:new 0 0 1441 175;" xml:space="preserve">
+    <polygon class="st0" points="0,175 1440,175 1440,0 0,124 " />
+    <polygon class="st1" points="0,175 1440,175 1440,0 0,93 " />
+    <polygon class="st1" points="0,175 1440,175 1440,0 0,107 " />
+  </svg>
 </section>
 
 <section>
@@ -209,8 +219,8 @@
           <h4>UN ENSOLEILLEMENT TOUT AU LONG DE
             LA JOURNEE</h4>
 
-          <p>
-            Les parcelles seront séparées par des haies
+          <p>Chaque villa profitera d'espaces extérieurs aménagés avec soin et magnifiquement arborés.</p>
+          <p> Les parcelles seront séparées par des haies
             et des arbustes ce qui garantira une privacité
             optimale.</p>
           <p>Idéalement exposées Sud-Ouest, les terrasses
@@ -345,7 +355,7 @@
     <div class="row">
       <div class="col-sm-6">
         <div class="sliding_element">
-          <h3>PARTENARES </h3>
+          <h3>PARTENAIRES </h3>
 
           <h4>PROMOTEUR </h4>
           <img class="partner_logo" src="images/logo-primogefi.png" alt="">

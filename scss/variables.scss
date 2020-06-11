@@ -54,3 +54,51 @@ $browser_width: 1200px;
   background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
   background: linear-gradient($direction, $color-stops);
 }
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+$title_dist_move: 50px;
+
+@keyframes contemporainesAnimation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes lesAnimation {
+  from {
+    opacity: 0;
+    transform: translateX( #{$title_dist_move * -1}  );
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(00px);
+  }
+}
+
+@keyframes tattesAnimation {
+  from {
+    opacity: 0;
+    transform: translateX($title_dist_move);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(00px);
+  }
+}
