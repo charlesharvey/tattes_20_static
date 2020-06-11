@@ -1,13 +1,13 @@
 <?php include('includes/header.php'); ?>
 
-<section class="title_section  ">
+<section class="title_section  " style="background-image:url(images/tattes-header-photo.jpg)">
 
   <div class="title_container">
     <div class="title_svg_container">
       <?php include('images/logo-tattes.svg'); ?>
     </div>
   </div>
-  <img src="images/tattes-header-photo.jpg" alt="">
+
   <svg class="white_triangles" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" preserveAspectRatio="none" viewBox="0 0 1441 175" style="enable-background:new 0 0 1441 175;" xml:space="preserve">
     <polygon class="st0" points="0,175 1440,175 1440,0 0,124 " />
     <polygon class="st1" points="0,175 1440,175 1440,0 0,93 " />
