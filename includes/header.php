@@ -18,14 +18,11 @@
             <a href="index.php" id="branding_mobile">Tattes</a>
             <nav>
 
-
-
-
                 <ul id="branding">
                     <li><a href="index.php">Menu</a></li>
                 </ul>
                 <ul>
-                    <li><a href="index.php">la plateforme</a></li>
+                    <!-- <li><a href="index.php">la plateforme</a></li> -->
 
                 </ul>
 

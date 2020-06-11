@@ -50,9 +50,13 @@ section {
   background-color: transparentize(white, 0.5);
   padding: 0;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 0;
   width: 100%;
+
+  @media (min-width: $mobile_width) {
+    top: 40%;
+  }
 
   h1 {
     padding: 0;
@@ -99,12 +103,21 @@ section {
 section.invisible {
   .sliding_element {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(50px);
+
+    @media (min-width: $mobile_width) {
+      transform: translateY(100px);
+    }
 
     &.sliding_element_2 {
-      transform: translateY(140px);
+      transform: translateY(70px);
 
+      @media (min-width: $mobile_width) {
+        transform: translateY(140px);
+      }
     }
+
+
 
 
   }
@@ -156,25 +169,39 @@ img.partner_logo {
 }
 
 img.most_of_width {
-  width: 80%;
+
+
+  @media (min-width: $mobile_width) {
+    width: 80%;
+  }
 }
 
 .map_container {
   position: relative;
 
   img {
-    width: 80%;
-    padding-top: $down_a_bit;
+
+
+    @media (min-width: $mobile_width) {
+      width: 80%;
+      padding-top: $down_a_bit;
+    }
   }
 
   .map_legend {
-    padding: $padding $double_padding;
+    padding: $padding;
     background-color: $black;
     color: white;
-    max-width: 300px;
-    position: absolute;
-    right: 0;
-    top: 0;
+
+
+    @media (min-width: $mobile_width) {
+      max-width: 300px;
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      padding: $padding $double_padding;
+    }
 
     ol {
       margin-bottom: 0;
