@@ -13,6 +13,11 @@
 
 @media (min-width: $browser_width) {}
 
+
+html {
+  overflow-x: hidden;
+}
+
 body {
   font: normal 62.5% $font_stack;
   background: white;
@@ -22,4 +27,162 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+}
+
+
+
+section {
+  margin: 100px 0;
+  position: relative;
+
+
+
+  &.title_section {
+    margin-top: 0;
+    top: -30px;
+  }
+
+}
+
+
+
+.title_container {
+  background-color: transparentize(white, 0.5);
+  padding: 0;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+
+  h1 {
+    padding: 0;
+    margin: 0;
+
+    width: 100%;
+    text-align: center;
+    height: 200px;
+    top: 0;
+    left: 0;
+
+    text-indent: -9999px;
+    background: url('../images/logo-tattes.svg') no-repeat center center;
+    background-size: 390px;
+  }
+
+}
+
+
+.border_right,
+.border_left {
+  position: absolute;
+  top: 0;
+  border-top: 8px solid $black;
+  width: 50%;
+  left: 50%;
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1.4s;
+
+
+  &.border_left {
+    left: auto;
+    right: 50%;
+  }
+
+  &.border_down_a_bit {
+    top: #{$down_a_bit - 40px};
+
+  }
+}
+
+
+section.invisible {
+  .sliding_element {
+    opacity: 0;
+    transform: translateY(100px);
+
+    &.sliding_element_2 {
+      transform: translateY(140px);
+
+    }
+
+
+  }
+
+
+  .border_right,
+  .border_left {
+    opacity: 0;
+    transform: translateX(100px);
+
+    &.border_left {
+      transform: translateX(-100px);
+    }
+  }
+
+}
+
+.sliding_element {
+  padding: $double_padding $padding;
+  transition: all 0.6s;
+  opacity: 1;
+  transform: translateY(0);
+
+  &.sliding_element_2 {
+    transition-duration: 2s;
+  }
+
+  &.down_a_bit {
+    padding-top: #{ $padding + $down_a_bit};
+  }
+
+
+}
+
+
+.photo_grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  img {
+    width: 50%;
+    border: 5px solid white;
+  }
+}
+
+img.partner_logo {
+  max-width: 40%;
+  margin: $padding 0 $double_padding;
+}
+
+img.most_of_width {
+  width: 80%;
+}
+
+.map_container {
+  position: relative;
+
+  img {
+    width: 80%;
+    padding-top: $down_a_bit;
+  }
+
+  .map_legend {
+    padding: $padding $double_padding;
+    background-color: $black;
+    color: white;
+    max-width: 300px;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    ol {
+      margin-bottom: 0;
+
+      li {
+        font-size: 1.9em;
+        padding: 0 0 13px;
+      }
+    }
+  }
 }

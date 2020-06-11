@@ -4,7 +4,7 @@ h3,
 h4,
 h5,
 h6 {
-    line-height: 110%;
+    line-height: 130%;
 }
 
 h1 {
@@ -22,16 +22,21 @@ h2 {
 }
 
 h3 {
-    font-size: #{$font_size * 1.5};
+    font-size: #{$font_size * 1.7};
     padding: 0 0 $padding;
+    color: $dark_grey;
 
-
+    strong {
+        font-size: 1.3em;
+    }
 }
 
 
 h4 {
-    font-size: #{$font_size * 1.2};
+    font-size: #{$font_size * 1};
     padding: 0 0 $padding;
+    font-weight: normal;
+    color: $dark_grey;
 }
 
 h5 {
@@ -149,10 +154,12 @@ textarea,
 select,
 button {
     padding: 10px;
-    border: 0;
+    border: 1px solid darken($light_grey, 5);
+    background-color: $light_grey;
+
     border-radius: 2px;
     font-family: $font_stack;
-    font-size: $font_size;
+    font-size: 1.75em;
     margin: 0 0 10px;
     width: 100%;
     box-shadow: 0 3px 0 0 transparent inset;
@@ -161,8 +168,8 @@ button {
     &:focus {}
 }
 
-.form_field {
-    margin: 0 0 25px;
+.field {
+    margin: 0 0 10px;
 
     &.field_error {
         label {
@@ -207,88 +214,6 @@ label.checkbox_label {
 
 }
 
-label.checkbox_label {
-
-    position: relative;
-
-
-    span {
-        padding-left: 30px;
-        padding-bottom: 5px;
-        padding-top: 5px;
-
-        display: inline-block;
-
-
-    }
-
-
-    input {
-        appearance: none;
-        background: white;
-        transition: all 0.3s;
-        width: 20px;
-        height: 20px;
-        border-radius: 5px;
-        border: 1px solid transparentize($font_color, 0.5);
-        display: inline-block;
-        width: auto;
-        position: absolute;
-        left: 0;
-        top: 3px;
-
-        &:hover {
-            background-color: transparentize($green, 0.9);
-        }
-
-        &:focus {
-            background-color: transparentize($green, 0.9);
-            box-shadow: 0 0 10px transparentize($green, 0.9);
-        }
-
-        &:checked {
-            background: $green;
-        }
-    }
-
-}
-
-label.radio_label {
-    font-size: #{$font_size * 0.8};
-
-    span {
-        transition: all 0.3s;
-        display: inline-block;
-        padding: 7px;
-        text-transform: uppercase;
-        border-radius: 5px;
-        margin: 0 5px 5px 0;
-        letter-spacing: 0.5px;
-        // background:  $light_grey;
-        background: transparentize(white, 0.5);
-
-        &:hover {
-            // background: white;
-            color: $font_color;
-            background: scale-color($green, $lightness: 15%);
-        }
-    }
-
-    input {
-        display: none;
-    }
-
-
-    input:checked+span {
-        background: $green;
-        color: white;
-    }
-}
-
-
-
-
-
 
 
 
@@ -297,7 +222,9 @@ label.radio_label {
 select {
     appearance: none;
     cursor: pointer;
-    background: white url('../images/chevron_down.svg') no-repeat 95% center;
+    background-image: url('../images/chevron_down.svg');
+    background-repeat: no-repeat;
+    background-position: 95% center;
     background-size: 10px;
 }
 
@@ -308,6 +235,7 @@ button {
     letter-spacing: 1px;
     background: $brand_color;
     color: white;
+    font-size: 1em;
 
     &:hover {
         background-color: darken($brand_color, 10);
@@ -342,11 +270,24 @@ p+ul {
 }
 
 ul {
-    margin-left: 30px;
+    margin: 0 0 $padding 30px;
     list-style: circle;
+
+}
+
+ol {
+    list-style: decimal;
+    margin: 0 0 $padding 30px;
+    padding-left: 10px;
+}
+
+h4+ul {
+    margin-top: $negative_padding;
+    ;
 }
 
 img {
     width: 100%;
     height: auto;
+    margin: 0 0 $double_padding;
 }

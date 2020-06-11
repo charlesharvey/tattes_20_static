@@ -26,27 +26,7 @@
                 </ul>
                 <ul>
                     <li><a href="index.php">la plateforme</a></li>
-                    <li>
-                        <a href="index.php"> nos actions</a>
-                        <ul>
-                            <li><a href="index.php">Submenu</a></li>
-                            <li><a href="index.php">Submenu</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="index.php"> les adherents</a>
-                        <ul>
-                            <li><a href="index.php">Submenu</a></li>
-                            <li><a href="index.php">Submenu</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="index.php"> restez connectes</a>
-                        <ul>
-                            <li><a href="index.php">Submenu</a></li>
-                            <li><a href="index.php">Submenu</a></li>
-                        </ul>
-                    </li>
+
                 </ul>
 
             </nav>

@@ -33,31 +33,31 @@
 
 
 
-        // SLIDER
-        // SLIDER
-
-        $('.slick_slider').slick({
-            dots: false,
-            arrows: false,
-            fade: true,
-            autoplay: true,
-            autoplaySpeed: 7000,
-            speed: 1000,
-            cssEase: 'ease-in-out',
-            pauseOnHover: false
-        });
-        // SLIDER
-        // SLIDER
+        var $sections = $('section');
+        $sections.addClass('invisible');
 
 
+        setInvisibleSections($window, $sections);
 
+        $window.on('scroll', function (e) {
 
-
-
-
-
-
-
+            setInvisibleSections($window, $sections);
+        })
     });
+
+
+    function setInvisibleSections($window, $sections) {
+        let $scrollPos = 0;
+        let $windowHeight = $window.height()
+        $scrollPos = $window.scrollTop() + ($windowHeight * 0.65);
+        for (let i = 0; i < $sections.length; i++) {
+            const $section = $sections[i];
+            if ($section.offsetTop < $scrollPos) {
+                $($section).removeClass('invisible');
+            } else {
+                $($section).addClass('invisible');
+            }
+        }
+    }
 
 })(jQuery, this);
