@@ -1,4 +1,4 @@
-$brand_color: #23f;
+$brand_color: #2b445e;
 $red: #f32;
 $green: #2f3;
 
@@ -8,7 +8,7 @@ $small_font_size: 1.7em;
 
 
 
-$down_a_bit: 80px;
+$down_a_bit: 150px;
 
 
 $font_stack: 'Eurostile',
@@ -25,7 +25,7 @@ sans-serif,
 
 
 
-$black: scale-color($brand_color, $lightness: -90%, $saturation: -90%);
+$black: scale-color($brand_color, $lightness: -80%, $saturation: -90%);
 $font_color: $black;
 $dark_grey: scale-color($black, $lightness: 20%);
 $medium_grey: scale-color($black, $lightness: 50%);
