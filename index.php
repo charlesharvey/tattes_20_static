@@ -398,12 +398,12 @@
 
             <div class="row">
               <div class="field col-sm-6">
-                <label for="person_prenom">Prénom</label>
+
                 <input type="text" name="prenom" placeholder="Prénom" id="person_prenom" />
               </div>
 
               <div class="field col-sm-6">
-                <label for="person_nom">Nom</label>
+
                 <input type="text" name="nom" placeholder="Nom" id="person_nom" />
               </div>
 
@@ -412,16 +412,16 @@
             <div class="field_group group_for_acheteur ">
 
               <div class="field">
-                <label for="person_address">Adresse</label>
+
                 <input type="text" name="address" placeholder="Adresse" id="person_address" />
               </div>
               <div class="row">
                 <div class="field col-sm-6">
-                  <label for="person_postcode">Code Postal</label>
+
                   <input type="text" name="postcode" placeholder="Code Postal" id="person_postcode" />
                 </div>
                 <div class="field col-sm-6">
-                  <label for="person_town">Ville</label>
+
                   <input type="text" name="ville" placeholder="Ville" id="person_town" />
                 </div>
               </div>
@@ -430,11 +430,11 @@
 
             <div class="row">
               <div class="field col-sm-6">
-                <label for="person_telephone">Téléphone</label>
+
                 <input type="text" name="person_telephone" placeholder="Téléphone" id="person_telephone" />
               </div>
               <div class="field col-sm-6">
-                <label for="person_email">Email</label>
+
                 <input type="email" name="person_email" placeholder="Email" id="person_email" />
               </div>
 
@@ -471,7 +471,7 @@
 
             <div class="field_group group_for_courtier">
               <div class="field">
-                <label for="company">Entreprise de courtage</label>
+
                 <input type="text" name="company" placeholder="Entreprise de courtage" id="company" />
               </div>
             </div>
@@ -480,7 +480,7 @@
 
 
             <div class="field ">
-              <label for="message">Message (optionnel) </label>
+
               <textarea name="message" placeholder="Message (optionnel)" id="message"></textarea>
             </div>
 
