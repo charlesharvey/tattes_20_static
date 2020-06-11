@@ -2,8 +2,8 @@ $brand_color: #2b445e;
 $red: #f32;
 $green: #2f3;
 
-$font_size: 2.55em;
-$small_font_size: 1.7em;
+$font_size: 2.2em;
+$small_font_size: 1.4em;
 
 
 
@@ -82,7 +82,7 @@ $title_dist_move: 50px;
 @keyframes lesAnimation {
   from {
     opacity: 0;
-    transform: translateX( #{$title_dist_move * -1}  );
+    transform: translateX(#{$title_dist_move * -1});
   }
 
   to {
