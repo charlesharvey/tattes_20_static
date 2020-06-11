@@ -1,0 +1,33 @@
+{
+    "name": "tattes_20_static",
+    "version": "0.0.1",
+    "description": "tattes_20_static",
+    "main": "index.php",
+    "scripts": {
+        "test": "say hello"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/chillydesign/tattes_20_static.git"
+    },
+    "author": "Charles Harvey",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/chillydesign/tattes_20_static/issues"
+    },
+    "homepage": "https://github.com/chillydesign/tattes_20_static#readme",
+    "devDependencies": {
+        "braces": "^3.0.2",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^6.1.0",
+        "gulp-minify": "^3.0.15",
+        "gulp-sass": "^4.0.1",
+        "gulp-watch": "^5.0.1",
+        "lodash": "^4.17.15",
+        "node-sass": "^4.13.1"
+    },
+    "browserslist": [
+        "> 1%",
+        "last 5 versions"
+    ]
+}

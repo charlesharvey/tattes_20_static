@@ -1,0 +1,293 @@
+$nav_width: 300px;
+
+@media (min-width: $mobile_width) {}
+
+
+
+header {
+    height: $header_height;
+
+    background: white;
+    padding: 0;
+
+    margin: 0;
+    position: relative;
+    z-index: 100;
+    text-transform: uppercase;
+
+
+    a#branding_mobile {
+        display: block;
+        width: 100%;
+        max-width: 250px;
+        background: url('../images/logo_black.png') no-repeat center left;
+        background-size: contain;
+        height:#{$header_height - 30px};
+        text-indent: -9999px;
+        top: 15px;
+        position: relative;
+
+
+        @media (min-width: $mobile_width) {
+            display: none;
+        }
+    }
+
+
+
+    nav {
+
+        color: white;
+        position: fixed;
+        transition: all 0.3s;
+        z-index: 120;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: $nav_width;
+        overflow: scroll;
+        background: transparentize($font_color, 0.03);
+        margin: 0;
+        transform: translateX(#{$nav_width * -1 });
+
+
+
+        &.menu_visible {
+            transform: translateX(0);
+        }
+
+        // MENU FOR DESKTOP
+        @media (min-width: $mobile_width) {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            transform: translateX(0);
+            margin: 0;
+            position: static;
+            height: auto;
+            width: auto;
+            background: none;
+            overflow: visible;
+            text-align: center;
+        }
+
+        ul {
+
+            padding: 0;
+            margin: 0;
+
+
+
+
+
+            // MENU FOR DESKTOP
+            @media (min-width: $mobile_width) {
+                flex: 1 auto;
+
+                display: flex;
+                flex-wrap: nowrap;
+
+                &:first-child {
+                    text-align: left;
+                }
+
+                &:last-child {
+                    text-align: right;
+                }
+
+            }
+
+
+            &#branding {
+                display: none;
+
+                @media (min-width: $mobile_width) {
+                    display: block;
+                }
+
+                li {
+                    width: 200px;
+                }
+
+                a {
+                    display: inline-block;
+                    height: #{$header_height - 30px};
+                    width: 100%;
+                    background: url('../images/logo_black.png') no-repeat center left;
+                    background-size: contain;
+                    text-indent: -9999px;
+                    position: relative;
+                    top: 15px;
+                    padding: 0;
+                    margin: 0;
+
+                    &:hover {
+                        transform: scale(1.02);
+                    }
+                }
+            }
+
+            // end of ul#branding
+
+
+            li {
+                display: block;
+                padding: 0 0;
+                margin: 0;
+                line-height: 1;
+                position: relative;
+                transition: all 0.3s;
+                width: 100%;
+
+
+
+
+                @media (min-width: 768px) {
+                    display: inline-block;
+
+
+                }
+
+
+                a {
+                    display: block;
+                    color: $font_color;
+                    text-decoration: none;
+
+                    margin: 0 0;
+                    position: relative;
+                    font-weight: bold;
+
+                    padding: 15px;
+
+
+                    &:link,
+                    &:visited,
+                    &:active {
+                        color: white;
+                    }
+
+                    &:hover {
+                        background: $dark_grey;
+                        color: white;
+                    }
+
+                    @media (min-width: 768px) {
+                        display: block;
+                        padding: 10px;
+                        margin-top: 50px;
+
+                        height: #{$header_height - 50px};
+
+
+
+                        &:link,
+                        &:visited,
+                        &:active {
+                            color: $font_color;
+                        }
+
+                        &:hover {
+                            color: white !important;
+                        }
+
+
+                    }
+
+                    // end of non mobile styles
+                }
+
+                // end of a
+
+
+
+
+                &:hover {
+                    ul {
+                        display: block;
+                    }
+
+                }
+
+                // end of li:hover
+
+
+                ul {
+
+                    @media (min-width: 768px) {
+                        position: absolute;
+                        top: 90%;
+                        right: 0;
+                        width: 200px;
+                        background: $medium_grey;
+                        text-align: left !important;
+                        display: none;
+                        z-index: 1000;
+
+                    }
+
+                    li {
+                        font-size: 0.85em;
+
+                        display: block;
+
+                        a {
+
+                            padding-left: 35px;
+
+                            display: block;
+
+                            @media (min-width: 768px) {
+                                padding: 15px;
+                                margin: 0;
+                                border-top: 1px solid lighten($medium_grey, 3);
+                                border-bottom: 1px solid darken($medium_grey, 3);
+                            }
+
+
+                        }
+                    }
+                }
+
+                // end of ul submenu
+
+            }
+
+            // end of li
+
+
+
+
+
+        }
+
+        // end of ul
+
+
+
+    }
+
+    // end of nav
+
+
+}
+
+#menu_button {
+    display: inline-block;
+    height: 34px;
+    width: 42px;
+    position: absolute;
+    z-index: 1000;
+    top: 16px;
+    right: 11px;
+    background: url('../images/menu.svg') no-repeat center;
+    background-size: 30px;
+    text-indent: -9999px;
+    cursor: pointer;
+
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+
+}
